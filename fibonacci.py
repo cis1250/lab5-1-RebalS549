@@ -6,7 +6,6 @@ def validating_user_input():
     while True:
         user_input = input("How many terms of the Fibonacci sequence do you want? ")
 
-        # Validate input
         if not user_input.isdigit() or int(user_input) <= 0:
             print("Please enter a positive integer.")
             continue
@@ -15,11 +14,11 @@ def validating_user_input():
 
 def fibonacci_sequence(user_input):
     n = int(user_input)
-    sequence = []  # create an empty list to store numbers
+    sequence = []  
     a, b = 0, 1
 
     for i in range(n):
-        sequence.append(a)  # add the current number to the list
+        sequence.append(a)  
         a, b = b, a + b
 
     return sequence
@@ -30,5 +29,4 @@ def print_sequence():
     print(f"The Fibonacci sequence with {n} terms is: {fib_list}")
 
 
-# Run the program
 print_sequence()
