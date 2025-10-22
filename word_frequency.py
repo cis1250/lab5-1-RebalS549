@@ -28,7 +28,7 @@ def is_sentence(text):
 def get_sentence():
     sentence = input("Enter a sentence: ")
 
-    while not is_sentence(user_sentence):
+    while not is_sentence(sentence):
         print("This does not meet the criteria for a sentence.")
         sentence = input("Enter a sentence: ")
 
@@ -53,7 +53,7 @@ def calculate_frequencies(sentence):
 
 def print_frequencies(words, frequencies):
     for i in range(len(words)):
-        print(f"{words[i]}: {freqs[i]}")
+        print(f"{words[i]}: {frequencies[i]}")
 
 def main():
     sentence = get_sentence()
